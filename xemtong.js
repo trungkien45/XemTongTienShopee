@@ -32,8 +32,9 @@ function xemBaoCaoThongKe() {
 							itemGroups['items'].forEach(data => {
 								let t5 = data["order_price"] / 100000;
 								tongSanPhamDaMua += data["amount"];
-								tongTienHangChuaGiam += t5;
-								tongChuaGiamTrongDon += t5;
+								let sl = data["amount"];
+								tongTienHangChuaGiam += t5 * sl;
+								tongChuaGiamTrongDon += t5 * sl;
 							});
 						});
 					});
@@ -59,13 +60,13 @@ function xemBaoCaoThongKe() {
                 var tongTienChiTieuX = pxgPrice(tongTienHang);
                 console.log("================================");
                 //console.log("%c" + PXGCert(tongTienHang), "font-size:26px;");
-                console.log("%c(1)Số tiền bạn Tiêu vào Shopee là: " + "%c" + pxgPrice(tongTienHang) + " vnđ%c", "font-size: 20px;", "font-size: 26px; color:orange;font-weigth:700", "font-size: 20px;");
+                console.log("%c(1)Số tiền bạn Tiêu vào Shopee là: " + "%c" + pxgPrice(tongTienHang) + "", "font-size: 20px;", "font-size: 26px; color:orange;font-weigth:700", "font-size: 20px;");
                 console.log("================================");
-                console.log("%c(2)Tổng đơn hàng đã giao: " + "%c" + pxgPrice(tongDonHang) + " đơn hàng", "font-size: 20px;", "font-size: 20px; color:green");
-                console.log("%c(3)Số lượng sản phẩm đã đặt: " + "%c" + pxgPrice(tongSanPhamDaMua) + " sản phẩm", "font-size: 20px;", "font-size: 20px; color:#fc0000");
+                console.log("%c(2)Tổng đơn hàng đã giao: " + tongDonHang + " đơn hàng", "font-size: 20px;", "font-size: 20px; color:green");
+                console.log("%c(3)Số lượng sản phẩm đã đặt: " + "%c" + tongSanPhamDaMua + " sản phẩm", "font-size: 20px;", "font-size: 20px; color:#fc0000");
 		console.log("%c(2)Tổng tiền hàng chưa áp mã: " + "%c" + pxgPrice(tongTienHangChuaGiam) + " đơn hàng", "font-size: 20px;", "font-size: 20px; color:green");
                 console.log("%c(4)Tổng tiền TIẾT KIỆM được nhờ áp Mã giảm giá Shopee: " + "%c" + pxgPrice(tongTienTietKiem) + " vnđ", "font-size: 18px;", "font-size: 18px; color:green");
-                console.log("%cTỔNG TIẾT KIỆM: " + "%c" + pxgPrice(tongTienTietKiem) + " vnđ", "font-size: 24px;", "font-size: 24px; color:orange;font-weigth:700");
+                console.log("%cTỔNG TIẾT KIỆM: " + "%c" + pxgPrice(tongTienTietKiem), "font-size: 24px;", "font-size: 24px; color:orange;font-weigth:700");
                 //console.log("%c💰NẾU MUA QAU RIOKUPON BẠN SẼ NHẬN HOÀN TIỀN ĐẾN: " + "%c" + pxgPrice(tongTienHoan) + " vnđ", "font-size: 24px;", "font-size: 24px; color:orange;font-weigth:700");
                 console.log("================================");
                 //console.log("%c👉Mua sắm nhận hoàn tiền đến 50% tại: " + "%chttps://riokupon.com", "font-size: 24px;", "font-size: 24px; color:orange;font-weigth:700");
