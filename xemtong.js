@@ -41,9 +41,9 @@ function xemBaoCaoThongKe() {
 					if(t31 > tongChuaGiamTrongDon){
 						console.log("hớ mất đơn");
 						console.log("https://shopee.vn/user/purchase/order/" +  order['info_card']['order_id']);
-						console.log("%ctổng tiền hàng: "+"%c" + pxgPrice(tongChuaGiamTrongDon), "font-size:15px;","font-size: 20px; color:green");
-						console.log("%ctổng tiền hàng + số tiền phí - trừ voucher: " +"%c" + pxgPrice(t31), "font-size:15px;", "font-size: 20px; color:green");
-						console.log("%csố tiền hớ: "+"%c" + pxgPrice(tongChuaGiamTrongDon - t31), "font-size:15px;","font-size: 20px; color:green");
+						console.log("%ctổng tiền hàng: "+"%c" + pxgPrice(tongChuaGiamTrongDon), "font-size:10px;","font-size: 20px; color:green");
+						console.log("%ctổng tiền hàng + số tiền phí - trừ voucher: " +"%c" + pxgPrice(t31), "font-size:10px;", "font-size: 20px; color:green");
+						console.log("%csố tiền hớ: "+"%c" + pxgPrice(tongChuaGiamTrongDon - t31), "font-size:10px;","font-size: 20px; color:green");
 					}
 					
 				});
