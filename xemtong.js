@@ -76,7 +76,7 @@ function xemBaoCaoThongKe() {
 
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = handleResponse;
-    console.log("fetching: https://shopee.vn/api/v4/order/get_order_list?list_type=3&offset=" + offset + "&limit=" + si");
+    console.log("fetching: https://shopee.vn/api/v4/order/get_order_list?list_type=3&offset=" + offset + "&limit=" + si);
     xhttp.open("GET", "https://shopee.vn/api/v4/order/get_order_list?list_type=3&offset=" + offset + "&limit=" + si, true);
     xhttp.send();
 }
