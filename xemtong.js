@@ -49,7 +49,7 @@ function xemBaoCaoThongKe() {
                 var tongTienChiTieuX = pxgPrice(tongTienHang);
                 console.log("================================");
                 console.log("%c" + PXGCert(tongTienHang), "font-size:26px;");
-                console.log("%c(1)Số tiền bạn ĐÃ ĐỐT vào Shopee là: " + "%c" + pxgPrice(tongTienHang) + " vnđ%c", "font-size: 20px;", "font-size: 26px; color:orange;font-weigth:700", "font-size: 20px;");
+                console.log("%c(1)Số tiền bạn Tiêu vào Shopee là: " + "%c" + pxgPrice(tongTienHang) + " vnđ%c", "font-size: 20px;", "font-size: 26px; color:orange;font-weigth:700", "font-size: 20px;");
                 console.log("================================");
                 console.log("%c(2)Tổng đơn hàng đã giao: " + "%c" + pxgPrice(tongDonHang) + " đơn hàng", "font-size: 20px;", "font-size: 20px; color:green");
                 console.log("%c(3)Số lượng sản phẩm đã đặt: " + "%c" + pxgPrice(tongSanPhamDaMua) + " sản phẩm", "font-size: 20px;", "font-size: 20px; color:#fc0000");
@@ -69,15 +69,7 @@ function xemBaoCaoThongKe() {
 }
 
 function PXGCert(pri) {
-    if (pri <= 10000000) {
-        return "HÊN QUÁ! BẠN CHƯA BỊ SHOPEE GÂY NGHIỆN 😍";
-    } else if (pri > 10000000 && pri <= 50000000) {
-        return "THÔI XONG! BẠN BẮT ĐẦU NGHIỆN SHOPEE RỒI 😂";
-    } else if (pri > 50000000 && pri < 80000000) {
-        return "ỐI GIỜI ƠI! BẠN LÀ CON NGHIỆN SHOPEE CHÍNH HIỆU 😱";
-    } else {
-        return "XÓA APP SHOPEE THÔI! BẠN NGHIỆN SHOPEE NẶNG QUÁ RỒI 😝";
-    }
+        return "";
 }
 
 function pxgPrice(number, fixed = 0) {
