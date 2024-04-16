@@ -62,7 +62,7 @@ function xemBaoCaoThongKe() {
                 //console.log("%c" + PXGCert(tongTienHang), "font-size:26px;");
                 console.log("%c(1)Số tiền bạn Tiêu vào Shopee là: " + "%c" + pxgPrice(tongTienHang), "font-size: 20px;", "font-size: 26px; color:orange;font-weigth:700");
                 console.log("================================");
-                console.log("%c(2)Tổng đơn hàng đã giao: " + "%c" + tongDonHang + " đơn hàng", "font-size: 20px; color:green");
+                console.log("%c(2)Tổng đơn hàng đã giao: " + "%c" + tongDonHang + " đơn hàng", "font-size: 20px;", "font-size: 20px; color:green");
                 console.log("%c(3)Số lượng sản phẩm đã đặt: " + "%c" + tongSanPhamDaMua + " sản phẩm", "font-size: 20px;", "font-size: 20px; color:#fc0000");
 		console.log("%c(2)Tổng tiền hàng chưa áp mã: " + "%c" + pxgPrice(tongTienHangChuaGiam) + " đơn hàng", "font-size: 20px;", "font-size: 20px; color:green");
                 console.log("%c(4)Tổng tiền TIẾT KIỆM được nhờ áp Mã giảm giá Shopee: " + "%c" + pxgPrice(tongTienTietKiem), "font-size: 18px;", "font-size: 18px; color:green");
