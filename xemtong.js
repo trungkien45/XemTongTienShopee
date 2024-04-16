@@ -7,7 +7,7 @@ var tongTienHoan = 0;
 var tongSanPhamDaMua = 0;
 var trangThaiDonHangConKhong = true;
 var offset = 0;
-var si = 1;
+var si = 4000000;
 
 function xemBaoCaoThongKe() {
     var orders = [];
