@@ -15,6 +15,6 @@ Tại tab trình duyệt đang mở Shopee.vn đã đăng nhập vào tài kho�
 
 **Bước 4: Chạy lệnh kiểm tra**
 
-Chạy Code trong xemtong.js ở [https://github.com/trungkien45/XemTongTienShopee/blob/master/xemtong.js](https://github.com/trungkien45/XemTongTienShopee/blob/master/xemtong.js)...
+Chạy Code trong xemtong.js ở [https://github.com/trungkien45/XemTongTienShopee/blob/master/xemtong.js](https://github.com/trungkien45/XemTongTienShopee/blob/master/xemtong.js) trong Console của trình duyệt.
 
-Chờ 1 lúc
+Chờ 1 lúc.
