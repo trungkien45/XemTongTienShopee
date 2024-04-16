@@ -7,7 +7,7 @@ Bạn hãy dùng trình duyệt trên máy tính để mở Shopee bằng cách 
 
 **Bước 2: Đăng nhập vào tài khoản Shopee muốn kiểm tra**
 
-Tiếp theo bạn hãy đăng nhập vào tài khoản Shopee muốn kiểm tra. Nếu bạn chưa biết cách đăng nhập tài khoản Shopee trên máy tính, hãy xem bài hướng dẫn này: https://magiamgiashopee.vn/dang-nhap-shopee/
+Tiếp theo bạn hãy đăng nhập vào tài khoản Shopee muốn kiểm tra.
 
 **Bước 3: Mở mục Console của Developer Tool**
 
