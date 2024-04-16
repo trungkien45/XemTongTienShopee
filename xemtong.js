@@ -7,7 +7,8 @@ var tongTienHoan = 0;
 var tongSanPhamDaMua = 0;
 var trangThaiDonHangConKhong = true;
 var offset = 0;
-var si = 4000000;
+//shopee cho fetch 20 đơn tối đa
+var si = 20;
 
 function xemBaoCaoThongKe() {
     var orders = [];
