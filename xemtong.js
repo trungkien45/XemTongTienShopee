@@ -41,7 +41,8 @@ function xemBaoCaoThongKe() {
 						console.log("hớ mất đơn");
 						console.log("https://shopee.vn/user/purchase/order/" +  order['info_card']['order_id']);
 						console.log("%c tổng tiền hàng: " + pxgPrice(tongChuaGiamTrongDon), "font-size:26px;");
-						console.log("%c số tiền phí - trừ voucher: " + pxgPrice(t31), "font-size:26px;");
+						console.log("%c tổng tiền hàng + số tiền phí - trừ voucher: " + pxgPrice(t31), "font-size:26px;");
+						console.log("%c số tiền hớ:" + pxgPrice(tongChuaGiamTrongDon - t31), "font-size:26px;");
 					}
 					
 				});
