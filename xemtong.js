@@ -3,7 +3,7 @@ var tongDonHang = 0;
 var tongTienTietKiem = 0;
 var tongTienHang = 0;
 var tongTienHangChuaGiam = 0;
-var tongTienHoan = 0;
+//var tongTienHoan = 0;
 var tongSanPhamDaMua = 0;
 var trangThaiDonHangConKhong = true;
 var offset = 0;
@@ -22,20 +22,23 @@ function xemBaoCaoThongKe() {
 				trangThaiDonHangConKhong = orders.length >= si;
 				orders.forEach(order => {
 					let t31 = order['info_card']['final_total'] / 100000;
-					let rp = t31/100*20;
-					if (rp > 40000) rp = 40000;
+					//let rp = t31/100*20;
+					//if (rp > 40000) rp = 40000;
 					tongTienHang += t31;
-					tongTienHoan += rp;
-	
+					//tongTienHoan += rp;
+					let tongChuaGiamTrongDon = 0;
 					order['info_card']['order_list_cards'].forEach(item => {
 						item['product_info']['item_groups'].forEach(itemGroups => {
 							itemGroups['items'].forEach(data => {
 								let t5 = data["order_price"] / 100000;
 								tongSanPhamDaMua += data["amount"];
 								tongTienHangChuaGiam += t5;
+								tongChuaGiamTrongDon += t5;
 							});
-						})
+						});
 					});
+					if(t31 < tongChuaGiamTrongDon)
+						console.log("hớ")
 				});
 				offset += si;
 			}
